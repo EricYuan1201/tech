@@ -9,7 +9,8 @@
     	* [线程池](Java/线程池.md)
 * [其他](其他/README.md)
 * [Server](Server/README.md)
-	 * [redis基础使用](Server/section1.md)
+	 * [redis使用](Server/section1.md)
+	 * [rabbitMQ使用](Server/section2.md)
 * [Web](Web/README.md)
 
 
