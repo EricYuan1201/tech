@@ -10,11 +10,11 @@
 * [其他](其他/README.md)
 * [Server](Server/README.md)
     * [基础篇](Server/section1.md)
-	   * [redis使用](Server/section1.1.md)
-	   * [rabbitMQ使用](Server/section1.2.md)
-	   * [mongoDb使用](Server/section1.3.md)
+	    * [redis使用](Server/section1.1.md)
+	    * [rabbitMQ使用](Server/section1.2.md)
+	    * [mongoDb使用](Server/section1.3.md)
 	* [业务篇](Server/section2.md)
-	   * [授权登录](Server/section2.1.md)
+	    * [授权登录](Server/section2.1.md)
 * [Web](Web/README.md)
 
 
