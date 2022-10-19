@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Web · GitBook</title>
+        <title>mongoDb使用 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,8 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
+    <link rel="next" href="../Web/" />
     
-    <link rel="prev" href="../Server/section3.html" />
+    
+    <link rel="prev" href="section2.html" />
     
 
     </head>
@@ -209,9 +211,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5" data-path="../Server/">
+        <li class="chapter " data-level="1.5" data-path="./">
             
-                <a href="../Server/">
+                <a href="./">
             
                     
                     Server
@@ -223,9 +225,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.5.1" data-path="../Server/section1.html">
+        <li class="chapter " data-level="1.5.1" data-path="section1.html">
             
-                <a href="../Server/section1.html">
+                <a href="section1.html">
             
                     
                     redis使用
@@ -236,9 +238,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.2" data-path="../Server/section2.html">
+        <li class="chapter " data-level="1.5.2" data-path="section2.html">
             
-                <a href="../Server/section2.html">
+                <a href="section2.html">
             
                     
                     rabbitMQ使用
@@ -249,9 +251,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.3" data-path="../Server/section3.html">
+        <li class="chapter active" data-level="1.5.3" data-path="section3.html">
             
-                <a href="../Server/section3.html">
+                <a href="section3.html">
             
                     
                     mongoDb使用
@@ -267,9 +269,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.6" data-path="./">
+        <li class="chapter " data-level="1.6" data-path="../Web/">
             
-                <a href="./">
+                <a href="../Web/">
             
                     
                     Web
@@ -310,7 +312,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Web</a>
+        <a href=".." >mongoDb使用</a>
     </h1>
 </div>
 
@@ -325,8 +327,48 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="web">Web</h1>
+                                <h1 id="mongodb">MongoDB</h1>
+<h2 id="&#x53C2;&#x8003;&#x6587;&#x6863;">&#x53C2;&#x8003;&#x6587;&#x6863;</h2>
+<p>1.<a href="https://juejin.cn/post/7052585815037673479" target="_blank">&#x5B89;&#x88C5;mongodb</a></p>
+<p>2.<a href="https://developer.aliyun.com/article/630321" target="_blank">mongodb&#x548C;mysql&#x533A;&#x522B;&#xFF1A;</a></p>
+<p>3.<a href="https://blog.csdn.net/weixin_43408020/article/details/113801424" target="_blank">datagrip&#x94FE;&#x63A5;mongodb&#xFF0C;&#x9ED8;&#x8BA4;&#x7AEF;&#x53E3;27017</a></p>
+<p>4.<a href="https://www.runoob.com/mongodb/mongodb-create-database.html" target="_blank">mongodb &#x83DC;&#x9E1F;&#x6559;&#x7A0B;</a></p>
+<p>5.<a href="https://www.macrozheng.com/mall/architect/mall_arch_08.html#%E6%9F%A5%E8%AF%A2mongodb%E4%B8%AD%E7%9A%84%E5%95%86%E5%93%81%E6%B5%8F%E8%A7%88%E8%AE%B0%E5%BD%95" target="_blank">&#x5B66;&#x4E60;mongodb:</a></p>
+<p>6.<a href="https://www.infoq.cn/article/hr3fclptdbxf9j8epo9o" target="_blank">mongodb&#x7406;&#x89E3;&#xFF1A;</a></p>
+<p>7.<a href="">&#x4EC0;&#x4E48;&#x65F6;&#x5019;&#x9009;&#x62E9;mongodb:</a></p>
+<p>  <a href="https://zhuanlan.zhihu.com/p/523497399" target="_blank">https://zhuanlan.zhihu.com/p/523497399</a></p>
+<blockquote>
+<p>&#x4ECA;&#x5929;&#x8C03;&#x8BD5;&#x4E00;&#x76F4;&#x8C03;&#x8BD5;&#x4E0D;&#x901A;&#xFF0C;&#x5076;&#x7136;&#x770B;&#x5230;log&#x624D;&#x53D1;&#x73B0;&#x662F;mysql&#x5FD8;&#x8BB0;&#x542F;&#x52A8;&#x4E86;&#xFF0C;&#x5148;&#x8BBE;&#x7F6E;&#x6210;&#x5F00;&#x673A;&#x542F;&#x52A8;&#x5427;&#x3002;
+  &#x7136;&#x540E;&#x662F;demo&#x7684;&#x5BC6;&#x7801;&#x5FD8;&#x8BB0;&#x6539;&#x4E86;&#x3002;</p>
+<p>spring boot&#x62A5;&#x7EA2;&#xFF0C;&#x641C;&#x4E86;&#x4E00;&#x5708;&#x65B9;&#x6848;&#xFF0C;&#x6700;&#x540E;&#x76F4;&#x63A5; file-invalidate cache and restart&#xFF0C;&#x91CD;&#x542F;&#x5927;&#x6CD5;&#x597D;&#x3002;</p>
+</blockquote>
+<h2 id="&#x76F4;&#x89C2;&#x5370;&#x8C61;">&#x76F4;&#x89C2;&#x5370;&#x8C61;</h2>
+<p>1.&#x975E;&#x5173;&#x7CFB;&#x578B;&#x6570;&#x636E;&#x5E93;</p>
+<p>2.&#x4FDD;&#x5B58;json</p>
+<p>3.&#x6620;&#x5C04;</p>
+<h2 id="&#x603B;&#x7ED3;">&#x603B;&#x7ED3;</h2>
+<pre><code>1.&#x5B89;&#x88C5;mongodb&#xFF0C;&#x5F00;&#x542F;&#x670D;&#x52A1;
+2.&#x521B;&#x5EFA;database
+3.mongodb&#x662F;&#x57FA;&#x4E8E;json&#x8FDB;&#x884C;&#x5B58;&#x50A8;&#x7684;&#xFF0C;&#x652F;&#x6301;&#x5206;&#x5E03;&#x5F0F;&#xFF0C;&#x5927;&#x6570;&#x636E;&#x3002;
+4.&#x975E;&#x5173;&#x7CFB;&#x578B;&#x6570;&#x636E;&#x5E93;&#xFF0C;&#x9002;&#x7528;&#x4E8E;&#x5FEB;&#x901F;&#x53D8;&#x66F4;&#x5B57;&#x6BB5;&#x7684;&#x90A3;&#x79CD;&#x573A;&#x666F;&#xFF0C;&#x4E0D;&#x8FC7;&#x5982;&#x679C;&#x975E;&#x5FC5;&#x987B;&#x5B89;&#x5168;&#x6027;&#xFF0C;join&#x67E5;&#x8BE2;&#x7684;&#xFF0C;&#x4E5F;&#x90FD;&#x53EF;&#x4EE5;&#x6B49;&#x610F;&#x5230;mongodb
+5.&#x6587;&#x4EF6;&#x5B58;&#x50A8;&#x3002;
+6.&#x4F7F;&#x7528;
+   1.&#x521B;&#x5EFA;bean&#xFF0C;@Id, @Index
+   2.&#x5199;&#x4E00;&#x4E2A;&#x63A5;&#x53E3;&#x5373;&#x6210;MongoRepository&#xFF0C;&#x7136;&#x540E;&#x58F0;&#x660E;&#x65B9;&#x6CD5;&#x3002;
+   3.&#x58F0;&#x660E;service
+   4.&#x5B9E;&#x73B0;service&#xFF0C;&#x52A8;&#x6001;&#x6CE8;&#x5165; autowired 2
+   5.&#x4F7F;&#x7528;2&#x7684;&#x5B9E;&#x73B0;&#x7C7B;&#x53BB;&#x6267;&#x884C;&#x65B9;&#x6CD5;&#x3002;save, delete, find&#x3002;
+</code></pre><h2 id="&#x5176;&#x4ED6;">&#x5176;&#x4ED6;</h2>
+<pre><code>&#x5173;&#x7CFB;&#x578B;&#x6570;&#x636E;&#x5E93;&#xFF1A;
+1.Oracle&#x6570;&#x636E;&#x5E93;&#x9ED8;&#x8BA4;&#x7AEF;&#x53E3;&#x53F7;&#x4E3A;&#xFF0C;1521&#xFF1B; 
+2.MySQL&#x6570;&#x636E;&#x5E93;&#x9ED8;&#x8BA4;&#x7AEF;&#x53E3;&#x53F7;&#x4E3A;&#xFF0C;3306&#xFF1B; 
+3.SQLServer&#x6570;&#x636E;&#x5E93;&#x9ED8;&#x8BA4;&#x7AEF;&#x53E3;&#x53F7;&#x4E3A;&#xFF0C;1433;
 
+nosql:&#x7AEF;&#x53E3;&#x5360;&#x7528;&#x60C5;&#x51B5;
+1.MongoDB&#x9ED8;&#x8BA4;&#x7AEF;&#x53E3;&#x53F7;&#x4E3A;&#xFF1A;27017&#xFF1B; 
+2.Redis&#x9ED8;&#x8BA4;&#x7AEF;&#x53E3;&#x53F7;&#x4E3A;&#xFF1A;6379&#xFF1B; 
+3.memcached&#x9ED8;&#x8BA4;&#x7AEF;&#x53E3;&#x53F7;&#x4E3A;&#xFF1A;11211&#xFF1B;
+</code></pre>
                                 
                                 </section>
                             
@@ -353,10 +395,14 @@
 
             
                 
-                <a href="../Server/section3.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: mongoDb使用">
+                <a href="section2.html" class="navigation navigation-prev " aria-label="Previous page: rabbitMQ使用">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
+                
+                <a href="../Web/" class="navigation navigation-next " aria-label="Next page: Web">
+                    <i class="fa fa-angle-right"></i>
+                </a>
                 
             
         
@@ -365,7 +411,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Web","level":"1.6","depth":1,"previous":{"title":"mongoDb使用","level":"1.5.3","depth":2,"path":"Server/section3.md","ref":"Server/section3.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Web/README.md","mtime":"2022-10-13T09:45:09.123Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-10-19T08:12:00.833Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"mongoDb使用","level":"1.5.3","depth":2,"next":{"title":"Web","level":"1.6","depth":1,"path":"Web/README.md","ref":"Web/README.md","articles":[]},"previous":{"title":"rabbitMQ使用","level":"1.5.2","depth":2,"path":"Server/section2.md","ref":"Server/section2.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Server/section3.md","mtime":"2022-10-19T08:10:37.444Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-10-19T08:12:00.833Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
