@@ -4,6 +4,11 @@
 * [Android](Android/README.md)
     * [Section1.1](Android/section1.1.md)
     * [Section1.2](Android/section1.2.md)
+    * [基础知识](Android/section4.md)
+    * [进阶知识](Android/section5.md)
+    	* [ANR](Android/section5.1.md)
+    * [三方框架](Android/section6.md)
+        
 * [Java](Java/README.md)
     * [线程](Java/section1.1.md)
     	* [线程池](Java/线程池.md)
