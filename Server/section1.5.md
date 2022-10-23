@@ -17,6 +17,15 @@
 
 6. 检测端口开放：
 	http://coolaf.com/tool/port
+	
+7. 减少docker镜像的办法：
+https://dockone.io/article/8163
+
+8. docker上传到docker hub:
+https://codeantenna.com/a/LqP4u7dijX
+
+9. centos安装docker:
+https://cloud.tencent.com/developer/article/1701451
 
 ## 常用命令
 
