@@ -19,6 +19,7 @@
 	    * [rabbitMQ使用](Server/section1.2.md)
 	    * [mongoDb使用](Server/section1.3.md)
 	    * [Docker使用](Server/section1.4.md)
+	    * [Docker部署](Server/section1.5.md)
 	* [业务篇](Server/section2.md)
 	    * [授权登录](Server/section2.1.md)
 * [Web](Web/README.md)
