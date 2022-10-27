@@ -22,6 +22,7 @@
         * [多模块划分思考](Server/section1.6.md)
         * [spring boot模块总结一](Server/section1.7.md)
         * [spring boot模块总结二](Server/section1.8.md)
+        * [@configuration, @Bean理解](Server/section1.9.md)
     * [业务篇](Server/section2.md)
         * [授权登录](Server/section2.1.md)
 * [Web](Web/README.md)
