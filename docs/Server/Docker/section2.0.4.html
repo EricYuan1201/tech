@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>docker · GitBook</title>
+        <title>docker构建图床服务 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="section2.0.1.html" />
+    <link rel="next" href="../section2.html" />
     
     
-    <link rel="prev" href="../section1.9.html" />
+    <link rel="prev" href="section2.0.3.html" />
     
 
     </head>
@@ -388,7 +388,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.5.1.8" data-path="section2.0.html">
+        <li class="chapter " data-level="1.5.1.8" data-path="section2.0.html">
             
                 <a href="section2.0.html">
             
@@ -441,7 +441,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.1.8.4" data-path="section2.0.4.html">
+        <li class="chapter active" data-level="1.5.1.8.4" data-path="section2.0.4.html">
             
                 <a href="section2.0.4.html">
             
@@ -595,7 +595,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../.." >docker</a>
+        <a href="../.." >docker构建图床服务</a>
     </h1>
 </div>
 
@@ -610,8 +610,88 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="docker">docker</h1>
+                                <h1 id="docker&#x6784;&#x5EFA;&#x56FE;&#x5E8A;&#x670D;&#x52A1;">docker&#x6784;&#x5EFA;&#x56FE;&#x5E8A;&#x670D;&#x52A1;</h1>
+<h2 id="&#x53C2;&#x8003;&#x6587;&#x6863;&#xFF1A;">&#x53C2;&#x8003;&#x6587;&#x6863;&#xFF1A;</h2>
+<p>1.centos&#x5B89;&#x88C5;docker:</p>
+<p><a href="https://www.myfreax.com/how-to-install-gradle-on-centos-7/" target="_blank">https://www.myfreax.com/how-to-install-gradle-on-centos-7/</a></p>
+<p>2.gradle-docker&#x5B98;&#x65B9;&#x6587;&#x6863;&#xFF1A;&#xFF08;&#x503C;&#x5F97;&#x770B;&#x5F88;&#x591A;&#x904D;&#xFF09;</p>
+<p><a href="https://github.com/palantir/gradle-docker" target="_blank">https://github.com/palantir/gradle-docker</a></p>
+<p>3.1&#x96C6;&#x6210;docker plugin(idea&#x7528;&#x7684;)&#xFF0C;&#x8FD9;&#x4E2A;&#x80FD;&#x770B;&#x8FDC;&#x7A0B;&#x7684;&#x955C;&#x50CF;&#x548C;&#x5BB9;&#x5668;&#xFF1A;</p>
+<p><a href="https://blog.csdn.net/Ajekseg/article/details/123936557" target="_blank">https://blog.csdn.net/Ajekseg/article/details/123936557</a></p>
+<p>3.2&#x5982;&#x679C;&#x6309;&#x7167;&#x8FD9;&#x79CD;&#xFF0C;&#x5176;&#x5B9E;&#x4E5F;&#x80FD;&#x90E8;&#x7F72;&#xFF0C;&#x4E0D;&#x8FC7;&#x6BCF;&#x6B21;&#x90FD;&#x9700;&#x8981;&#x6539;&#x7248;&#x672C;&#x53F7;&#xFF0C;&#x6211;&#x4E00;&#x65F6;&#x6CA1;&#x6709;&#x627E;&#x5230;&#x7B80;&#x5355;&#x7684;&#x529E;&#x6CD5;&#xFF1A;</p>
+<p><a href="https://blog.csdn.net/xhtchina/article/details/126436348" target="_blank">https://blog.csdn.net/xhtchina/article/details/126436348</a></p>
+<p><a href="https://blog.csdn.net/boling_cavalry/article/details/100051325" target="_blank">https://blog.csdn.net/boling_cavalry/article/details/100051325</a></p>
+<p><a href="https://www.cnblogs.com/dw3306/p/14047445.html&#xFF0C;&#x8FD9;&#x4E2A;&#x6587;&#x6863;&#x6BD4;&#x8F83;&#x7EC6;&#x3002;" target="_blank">https://www.cnblogs.com/dw3306/p/14047445.html&#xFF0C;&#x8FD9;&#x4E2A;&#x6587;&#x6863;&#x6BD4;&#x8F83;&#x7EC6;&#x3002;</a></p>
+<p>4.&#x6587;&#x4EF6;&#x4E0A;&#x4F20;&#x670D;&#x52A1;&#x5668;</p>
+<p><a href="https://blog.csdn.net/qq_40298902/article/details/125294163" target="_blank">https://blog.csdn.net/qq_40298902/article/details/125294163</a></p>
+<p>5.&#x6784;&#x5EFA;nginx&#x56FE;&#x5E8A;&#x670D;&#x52A1;&#x5668;&#xFF1A;</p>
+<p><a href="https://cloud.tencent.com/developer/article/2059698" target="_blank">https://cloud.tencent.com/developer/article/2059698</a></p>
+<h2 id="&#x9879;&#x76EE;&#x5206;&#x89E3;&#xFF1A;">&#x9879;&#x76EE;&#x5206;&#x89E3;&#xFF1A;</h2>
+<p>1.&#x9700;&#x8981;&#x4E0A;&#x4F20;&#x56FE;&#x7247;&#x670D;&#x52A1;&#x3002;</p>
+<p>2.&#x9700;&#x8981;&#x80FD;&#x591F;&#x8BBF;&#x95EE;&#x56FE;&#x7247;&#x3002;</p>
+<p>&#x5176;&#x5B9E;&#x4E5F;&#x53EF;&#x4EE5;&#x6784;&#x5EFA;&#x4E00;&#x4E2A;&#x670D;&#x52A1;&#xFF0C;&#x4E0D;&#x8FC7;&#x9700;&#x8981;&#x5199;&#x4E00;&#x4E9B;&#x903B;&#x8F91;&#x4E86;&#xFF0C;&#x62C6;&#x5206;&#x4E00;&#x4E0B;&#x53CD;&#x800C;&#x5BB9;&#x6613;&#x4E00;&#x4E9B;&#xFF0C;&#x6BD5;&#x7ADF;&#x662F;&#x81EA;&#x5DF1;&#x7684;demo&#x5DE5;&#x7A0B;&#x3002;</p>
+<h3 id="1&#x6784;&#x5EFA;&#x56FE;&#x5E8A;&#x670D;&#x52A1;&#xFF1A;">1.&#x6784;&#x5EFA;&#x56FE;&#x5E8A;&#x670D;&#x52A1;&#xFF1A;</h3>
+<p>&#x5176;&#x5B9E;&#x5C31;&#x662F;&#x4E00;&#x4E2A;nginx&#xFF0C;&#x7136;&#x540E;&#x628A;&#x56FE;&#x7247;&#x653E;&#x5230;nginx&#x76EE;&#x5F55;&#x4E0B;&#xFF0C;&#x7136;&#x540E;&#x5C31;&#x80FD;&#x591F;&#x76F4;&#x63A5;&#x8BBF;&#x95EE;&#x4E86;&#x3002;</p>
+<p>&#x4F7F;&#x7528;docker&#xFF0C;&#x518D;&#x6B21;&#x611F;&#x53D7;&#x5230;&#x4E86;docker&#x7684;&#x5389;&#x5BB3;&#x3002;</p>
+<p>&#x5199;dockerFile:</p>
+<pre><code>FROM nginx:latest
+MAINTAINER username
+COPY default.conf /etc/nginx/conf.d/default.conf
+EXPOSE 80
+</code></pre><p>2.&#x914D;&#x7F6E;nginx.conf&#xFF1A;</p>
+<pre><code>server {
+    listen       80;
+    server_name  localhost;
 
+    #(5)
+    #charset koi8-r;
+    #access_log  /var/log/nginx/host.access.log  main;
+
+    location / {
+        root   /usr/share/nginx/html;
+        index  index.html index.htm;
+    }
+
+    #(1)
+    location /images/ {
+        root  /mnt/;
+        autoindex on; #(2)
+        autoindex_exact_size off; #(3)
+        autoindex_localtime on; #(4)
+        charset utf-8,gbk; #(5)
+    }
+
+    #error_page  404              /404.html;
+
+    # redirect server error pages to the static page /50x.html
+    #
+    error_page   500 502 503 504  /50x.html;
+    location = /50x.html {
+        root   /usr/share/nginx/html;
+    }
+}
+</code></pre><p>&#x7136;&#x540E;&#x6784;&#x5EFA;&#x955C;&#x50CF;&#xFF0C;&#x542F;&#x52A8;&#x5BB9;&#x5668;&#xFF1A;</p>
+<p>docker run -d --name image  -p 8089:80 -v  images:/mnt/images image:v1</p>
+<p>-v&#x662F;&#x6302;&#x8F7D;&#x914D;&#x7F6E;&#xFF0C;&#x524D;&#x9762;&#x662F;&#x672C;&#x5730;&#x8DEF;&#x5F84;&#xFF0C;&#x540E;&#x9762;&#x7684;docker&#x5BB9;&#x5668;&#x91CC;&#x9762;&#x7684;&#x8DEF;&#x5F84;&#xFF0C;&#x505A;&#x4E00;&#x4E2A;&#x6620;&#x5C04;&#xFF0C;&#x80FD;&#x591F;&#x5199;&#x5165;&#x5230;&#x672C;&#x5730;&#x6587;&#x4EF6;&#x4E2D;&#x3002;</p>
+<h3 id="2&#x9700;&#x8981;&#x4E0A;&#x4F20;&#x56FE;&#x7247;&#x670D;&#x52A1;&#x3002;">2.&#x9700;&#x8981;&#x4E0A;&#x4F20;&#x56FE;&#x7247;&#x670D;&#x52A1;&#x3002;</h3>
+<p>&#x8FD9;&#x4E2A;&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x7EAF;&#x7CB9;&#x7684;spring boot&#x9879;&#x76EE;&#xFF0C;&#x91CC;&#x9762;&#x53EA;&#x58F0;&#x660E;&#x4E86;&#x4E00;&#x4E2A;controller&#xFF0C;&#x5C31;&#x662F;fileUploadController</p>
+<p>&#x6838;&#x5FC3;&#x70B9;&#xFF1A;</p>
+<blockquote>
+<p>&#x6587;&#x4EF6;&#x4E0A;&#x4F20;&#x4E4B;&#x540E;&#xFF0C;&#x5F00;&#x542F;docker&#x670D;&#x52A1;&#xFF0C;volums&#x672C;&#x5730;&#x8DEF;&#x5F84;&#x548C;&#x4E0A;&#x9762;&#x7684;&#x56FE;&#x5E8A;&#x670D;&#x52A1;&#x5668;&#x914D;&#x7F6E;&#x4E3A;1&#x4E2A;&#xFF0C;&#x8FD9;&#x6837;&#x8FD9;&#x8FB9;&#x4E0A;&#x4F20;&#x4E4B;&#x540E;&#xFF0C;&#x53E6;&#x5916;&#x4E00;&#x8FB9;&#x53EF;&#x4EE5;&#x8BBF;&#x95EE;&#x3002;</p>
+</blockquote>
+<p>&#x6700;&#x540E;&#x7684;&#x7B56;&#x7565;&#xFF1A;</p>
+<pre><code>1. &#x521B;&#x5EFA;git&#x9879;&#x76EE;
+2. &#x672C;&#x5730;&#x5199;&#x597D;&#x4EE3;&#x7801;&#x4E4B;&#x540E;&#x63D0;&#x4EA4;
+3. &#x670D;&#x52A1;&#x5668;&#x62C9;git&#x9879;&#x76EE;
+4. &#x914D;&#x7F6E;platfrom, volum&#x914D;&#x7F6E;
+5. &#x6267;&#x884C; ./gradlew dockerBuildAndRun
+</code></pre><h2 id="&#x5176;&#x4ED6;&#xFF1A;&#x7AEF;&#x53E3;&#x653E;&#x5F00;&#x95EE;&#x9898;&#xFF1A;">&#x5176;&#x4ED6;&#xFF1A;&#x7AEF;&#x53E3;&#x653E;&#x5F00;&#x95EE;&#x9898;&#xFF1A;</h2>
+<pre><code>&#x5C1D;&#x8BD5;&#x672C;&#x5730;&#x670D;&#x52A1;&#x653E;&#x5230;docker&#x4E0A;&#xFF0C;&#x626B;&#x63CF;&#x7AEF;&#x53E3;&#x4E00;&#x76F4;&#x4E0D;&#x901A;
+https://tool.chinaz.com/port
+&#x6709;&#x4E24;&#x79CD;&#x53EF;&#x80FD;&#xFF1A;
+1.&#x7AEF;&#x53E3;&#x786E;&#x5B9E;&#x6CA1;&#x653E;&#x5F00;
+2.&#x7AEF;&#x53E3;&#x653E;&#x5F00;&#x4E86;&#xFF0C;&#x4F46;&#x662F;&#x6CA1;&#x6709;&#x670D;&#x52A1;&#xFF0C;&#x4F7F;&#x7528; netstat -nlpt &#x67E5;&#x770B;&#x5F53;&#x524D;&#x6240;&#x6709;&#x653E;&#x5F00;&#x7684;&#x7AEF;&#x53E3;&#x3002;
+</code></pre>
                                 
                                 </section>
                             
@@ -638,12 +718,12 @@
 
             
                 
-                <a href="../section1.9.html" class="navigation navigation-prev " aria-label="Previous page: @configuration, @Bean理解">
+                <a href="section2.0.3.html" class="navigation navigation-prev " aria-label="Previous page: idea无法执行docker task趟坑">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="section2.0.1.html" class="navigation navigation-next " aria-label="Next page: Docker使用">
+                <a href="../section2.html" class="navigation navigation-next " aria-label="Next page: 业务篇">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -654,7 +734,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"docker","level":"1.5.1.8","depth":3,"next":{"title":"Docker使用","level":"1.5.1.8.1","depth":4,"path":"Server/Docker/section2.0.1.md","ref":"Server/Docker/section2.0.1.md","articles":[]},"previous":{"title":"@configuration, @Bean理解","level":"1.5.1.7","depth":3,"path":"Server/section1.9.md","ref":"Server/section1.9.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Server/Docker/section2.0.md","mtime":"2022-10-28T06:35:05.149Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-10-28T09:47:10.643Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"docker构建图床服务","level":"1.5.1.8.4","depth":4,"next":{"title":"业务篇","level":"1.5.2","depth":2,"path":"Server/section2.md","ref":"Server/section2.md","articles":[{"title":"授权登录","level":"1.5.2.1","depth":3,"path":"Server/section2.1.md","ref":"Server/section2.1.md","articles":[]}]},"previous":{"title":"idea无法执行docker task趟坑","level":"1.5.1.8.3","depth":4,"path":"Server/Docker/section2.0.3.md","ref":"Server/Docker/section2.0.3.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Server/Docker/section2.0.4.md","mtime":"2022-10-28T09:47:06.102Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-10-28T09:47:10.643Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
