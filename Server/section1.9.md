@@ -24,6 +24,12 @@ https://www.jianshu.com/p/8a953cd0b265
 7.自定义cache配置： （核心）
 https://blog.csdn.net/weixin_44577106/article/details/122074164
 
+8.shiro使用：
+https://segmentfault.com/a/1190000041549741
+
+9.拦截器和过滤器适用：
+https://blog.csdn.net/zzhongcy/article/details/102498081
+
 ## 记录一次设置@Bean的逻辑：
 
 起源是看了一个项目，使用的是shiro+redis+jwtToken进行登录认证以及授权的。
