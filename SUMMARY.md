@@ -17,8 +17,6 @@
         * [redis使用](Server/section1.1.md)
         * [rabbitMQ使用](Server/section1.2.md)
         * [mongoDb使用](Server/section1.3.md)
-        * [Docker使用](Server/section1.4.md)
-        * [Docker部署](Server/section1.5.md)
         * [多模块划分思考](Server/section1.6.md)
         * [spring boot模块总结一](Server/section1.7.md)
         * [spring boot模块总结二](Server/section1.8.md)
