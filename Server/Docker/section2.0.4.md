@@ -30,6 +30,10 @@ https://blog.csdn.net/qq_40298902/article/details/125294163
 
 https://cloud.tencent.com/developer/article/2059698
 
+6.nginx反向代理多个docker容器：
+
+https://www.cnblogs.com/fuhua/p/15065144.html
+
 ##项目分解：
 
 1.需要上传图片服务。
