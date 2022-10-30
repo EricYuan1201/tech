@@ -15,6 +15,7 @@
 * [Server](Server/README.md)
     * [基础篇](Server/section1.md)
         * [redis使用](Server/section1.1.md)
+        * [redis使用2](Server/section1.1.1.md)
         * [rabbitMQ使用](Server/section1.2.md)
         * [mongoDb使用](Server/section1.3.md)
         * [多模块划分思考](Server/section1.6.md)
