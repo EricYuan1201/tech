@@ -33,4 +33,5 @@
     * [基础篇](Web/section1.md)
         * [vue快速入门](Web/section1.1.md)
         * [css入门](Web/section1.2.md)
+        * [vue架构梳理](Web/section1.3.md)
 
