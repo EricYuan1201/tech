@@ -18,6 +18,7 @@
         * [redis使用2](Server/section1.1.1.md)
         * [rabbitMQ使用](Server/section1.2.md)
         * [mongoDb使用](Server/section1.3.md)
+        * [aop使用](Server/section1.3.1.md)
         * [多模块划分思考](Server/section1.6.md)
         * [spring boot模块总结一](Server/section1.7.md)
         * [spring boot模块总结二](Server/section1.8.md)
@@ -34,4 +35,6 @@
         * [vue快速入门](Web/section1.1.md)
         * [css入门](Web/section1.2.md)
         * [vue架构梳理](Web/section1.3.md)
+* [生活杂记](normal/README.md)
+    * [2022-11-01](normal/section1.md)
 

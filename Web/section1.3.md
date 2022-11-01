@@ -81,7 +81,7 @@
 	1.入口是index.html
 	2.使用main.js进行挂载
 	3.main.js创建了App.vue
-	4.app.vue引入了<router-view/>
+	4.app.vue引入了<router-view/> (重点！！！！！)
 	5.通过router-view才真正引入了各个页面。
 	6.核心的页面vue都会在router.js里面进行声明。
 	7.然后各个vue页面都可以包含其他vue组件。
