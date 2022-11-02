@@ -31,6 +31,7 @@
             * [docker构建图床服务](Server/Docker/section2.0.4.md)
     * [业务篇](Server/section2.md)
         * [授权登录](Server/section2.1.md)
+        * [项目实战配置1](Server/section2.2.md)
 * [Web](Web/README.md)
     * [基础篇](Web/section1.md)
         * [vue快速入门](Web/section1.1.md)
