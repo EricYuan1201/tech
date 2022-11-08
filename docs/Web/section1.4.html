@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>基础篇 · GitBook</title>
+        <title>vue指令和路由理解 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="section1.1.html" />
+    <link rel="next" href="../normal/" />
     
     
-    <link rel="prev" href="./" />
+    <link rel="prev" href="section1.3.html" />
     
 
     </head>
@@ -586,7 +586,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="1.6.1" data-path="section1.html">
+        <li class="chapter " data-level="1.6.1" data-path="section1.html">
             
                 <a href="section1.html">
             
@@ -639,7 +639,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.6.1.4" data-path="section1.4.html">
+        <li class="chapter active" data-level="1.6.1.4" data-path="section1.4.html">
             
                 <a href="section1.4.html">
             
@@ -724,7 +724,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >基础篇</a>
+        <a href=".." >vue指令和路由理解</a>
     </h1>
 </div>
 
@@ -739,8 +739,46 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="&#x57FA;&#x7840;&#x7BC7;">&#x57FA;&#x7840;&#x7BC7;</h1>
+                                <h1 id="vue&#x6307;&#x4EE4;&#x548C;&#x8DEF;&#x7531;&#x7406;&#x89E3;">vue&#x6307;&#x4EE4;&#x548C;&#x8DEF;&#x7531;&#x7406;&#x89E3;</h1>
+<h3 id="&#x524D;&#x63D0;&#xFF1A;">&#x524D;&#x63D0;&#xFF1A;</h3>
+<pre><code>&#x611F;&#x89C9;&#x6574;&#x4E2A;&#x6982;&#x5FF5;&#x90FD;&#x72E0;&#x6DF7;&#x6C8C;&#xFF1A;/
 
+&#x73B0;&#x5728;&#x7684;&#x9636;&#x6BB5;&#x5904;&#x4E8E;&#x57FA;&#x672C;&#x80FD;&#x770B;&#x61C2;&#xFF0C;&#x4F46;&#x662F;&#x6CA1;&#x6709;&#x7CFB;&#x7EDF;&#x5B66;&#x4E60;&#x8FC7;&#xFF0C;&#x6CA1;&#x6709;&#x6846;&#x67B6;&#x7684;&#x6982;&#x5FF5;&#x3002;
+&#x5305;&#x62EC;html, css &#x4E5F;&#x662F;&#x8FD9;&#x6837;&#x3002; &#x57FA;&#x7840;&#x6982;&#x5FF5;&#x90FD;&#x77E5;&#x9053;&#xFF0C;&#x770B;&#x4EE3;&#x7801;&#x4E5F;&#x80FD;&#x770B;&#x51FA;&#x6765;&#xFF0C;&#x4F46;&#x662F;&#x5199;&#x4E0D;&#x51FA;&#x6765;&#x3002;
+
+
+&#x57FA;&#x7840;&#x662F;&#x57FA;&#x7840;&#xFF0C;
+&#x4F46;&#x662F;&#x57FA;&#x7840;&#x5F88;&#x7E41;&#x6742;&#xFF0C;&#x6211;&#x89C9;&#x5F97;&#x4E0D;&#x7528;&#x770B;&#x5168;&#x90E8;&#x7684;&#x57FA;&#x7840;&#xFF0C;&#x7406;&#x89E3;&#x5176;&#x4E2D;&#x7684;&#x67B6;&#x6784;&#x5C31;&#x884C;&#xFF0C;&#x8FD9;&#x4E2A;&#x9700;&#x8981;&#x719F;&#x8BB0;&#x4E14;&#x6E05;&#x6670;&#x7684;&#x3002;
+</code></pre><h3 id="vue&#x6307;&#x4EE4;&#x5B66;&#x4E60;&#xFF1A;">vue&#x6307;&#x4EE4;&#x5B66;&#x4E60;&#xFF1A;</h3>
+<p>vue&#x6307;&#x4EE4;&#x5B66;&#x4E60;&#xFF1A;
+<a href="https://juejin.cn/post/7035822541386022920#heading-4" target="_blank">https://juejin.cn/post/7035822541386022920#heading-4</a>
+<a href="https://www.tangyuxian.com/2021/07/13/%E5%89%8D%E7%AB%AF/vue/vue-vue%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/" target="_blank">https://www.tangyuxian.com/2021/07/13/%E5%89%8D%E7%AB%AF/vue/vue-vue%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/</a>
+<a href="https://segmentfault.com/a/1190000016763522" target="_blank">https://segmentfault.com/a/1190000016763522</a></p>
+<pre><code>1.&#x4E00;&#x5B9A;&#x662F;&#x4EE5;v-&#x5F00;&#x5934;&#xFF0C;&#x90FD;&#x662F;&#x4FEE;&#x9970;&#x5230;&lt;&gt;&#x67D0;&#x4E2A;&#x6807;&#x7B7E;&#x91CC;&#x3002;
+2.&#x6700;&#x6838;&#x5FC3;&#x7684;&#x662F; v-bind:xxx= &#x548C; v-on:xx=
+  v-bind&#x7528;&#x4E8E;&#x4FEE;&#x9970; html&#x5C5E;&#x6027;&#xFF0C;&#x53EF;&#x4EE5;&#x7F29;&#x5199;&#x4E3A;:
+  v-on&#x53EF;&#x4EE5;&#x7F29;&#x5199;&#x4E3A; @
+3.&#x6570;&#x636E;&#x7ED1;&#x5B9A;&#x6BD4;&#x8F83;&#x5E38;&#x7528;&#x7684; 
+  v-if=&quot;&quot;
+  v-for=&quot;item in items&quot;
+4.v-model=&quot;&quot; ---&gt; &#x8868;&#x5355;&#x7684;&#x53CC;&#x5411;&#x7ED1;&#x5B9A;&#x3002;
+</code></pre><h3 id="vue&#x8DEF;&#x7531;&#x5B66;&#x4E60;&#xFF08;&#x7EC4;&#x4EF6;&#xFF09;">vue&#x8DEF;&#x7531;&#x5B66;&#x4E60;&#xFF08;&#x7EC4;&#x4EF6;&#xFF09;</h3>
+<p>vue&#x8DEF;&#x7531;&#x5B66;&#x4E60;&#xFF1A;
+<a href="https://cn.vuejs.org/guide/essentials/component-basics.html#dom-template-parsing-caveats" target="_blank">https://cn.vuejs.org/guide/essentials/component-basics.html#dom-template-parsing-caveats</a>
+<a href="https://juejin.cn/post/7096520622557102111" target="_blank">https://juejin.cn/post/7096520622557102111</a></p>
+<pre><code>1.&#x8DEF;&#x7531;&#x7684;&#x57FA;&#x7840;&#x662F;&#x7EC4;&#x4EF6;&#xFF0C;component&#xFF0C;&#x9700;&#x8981;&#x5355;&#x72EC;&#x6CE8;&#x518C;&#x8FDB;&#x5165;&#xFF0C;&#x5176;&#x5B9E;&#x5C31;&#x662F;&#x5B89;&#x5353;&#x7684;&#x81EA;&#x5B9A;&#x4E49;view&#x3002;
+2.&#x53EA;&#x6709;&#x4E00;&#x4E2A;html&#xFF0C;&#x901A;&#x8FC7;&#x7EC4;&#x4EF6;&#x7684;&#x5207;&#x6362;&#x5C55;&#x793A;&#x4E0D;&#x540C;&#x7684;&#x201C;&#x9875;&#x9762;&#x201D;&#x3002;router&#x662F;vue&#x7684;&#x5FC5;&#x987B;&#x4F9D;&#x8D56;&#x9879;&#x3002;
+  &#x901A;&#x8FC7;&#x8DEF;&#x7531;&#x8DF3;&#x8F6C;&#xFF0C;&#x8BA9;&#x67D0;&#x4E2A;&#x7EC4;&#x4EF6;&#x5BF9;&#x7528;&#x6237;&#x53EF;&#x89C1;&#xFF0C;&#x4E4B;&#x524D;&#x7684;&#x7EC4;&#x4EF6;&#x9690;&#x85CF;&#x3002;
+  &#x6838;&#x5FC3;&#x662F;&#xFF1A;conpnent, router-linker
+3.&#x7EC4;&#x4EF6;&#x7684;&#x4F7F;&#x7528;&#xFF1A;
+  1.import, &#x5BFC;&#x5165; route.js&#x91CC;&#x9762;&#xFF0C;&#x5B9A;&#x4E49;path&#x548C;component&#x3002;&#x5176;&#x5B9E;&#x662F;&#x6CE8;&#x518C;&#x6620;&#x5C04;&#x5173;&#x7CFB;&#x3002;
+  2.import, &#x6CE8;&#x518C;&#x5230;component&#x91CC;&#x9762; &#xFF08;js&#x4EE3;&#x7801;&#x4E2D;&#xFF09;
+  3.&#x7136;&#x540E;&#x5728;template&#x91CC;&#x9762;&#x5C31;&#x53EF;&#x4EE5;&#x4EE5;view&#x7684;&#x5F62;&#x5F0F;&#x5F15;&#x5165;&#x7EC4;&#x4EF6;&#x4E86;&#x3002;
+4.&#x8DEF;&#x7531;&#x7684;&#x4F7F;&#x7528;&#xFF1A;
+  $router === &#x5B89;&#x5353;&#x91CC;&#x9762;&#x7684;intent&#x6982;&#x5FF5;&#x3002;
+  &#x5BF9;&#x5E94;query&#xFF0C; params&#x53C2;&#x6570;&#x83B7;&#x53D6;&#x3002;
+5.&#x8DEF;&#x7531;&#x5D4C;&#x5957;
+</code></pre>
                                 
                                 </section>
                             
@@ -767,12 +805,12 @@
 
             
                 
-                <a href="./" class="navigation navigation-prev " aria-label="Previous page: Web">
+                <a href="section1.3.html" class="navigation navigation-prev " aria-label="Previous page: vue架构梳理">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="section1.1.html" class="navigation navigation-next " aria-label="Next page: vue快速入门">
+                <a href="../normal/" class="navigation navigation-next " aria-label="Next page: 生活杂记">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -783,7 +821,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"基础篇","level":"1.6.1","depth":2,"next":{"title":"vue快速入门","level":"1.6.1.1","depth":3,"path":"Web/section1.1.md","ref":"Web/section1.1.md","articles":[]},"previous":{"title":"Web","level":"1.6","depth":1,"path":"Web/README.md","ref":"Web/README.md","articles":[{"title":"基础篇","level":"1.6.1","depth":2,"path":"Web/section1.md","ref":"Web/section1.md","articles":[{"title":"vue快速入门","level":"1.6.1.1","depth":3,"path":"Web/section1.1.md","ref":"Web/section1.1.md","articles":[]},{"title":"css入门","level":"1.6.1.2","depth":3,"path":"Web/section1.2.md","ref":"Web/section1.2.md","articles":[]},{"title":"vue架构梳理","level":"1.6.1.3","depth":3,"path":"Web/section1.3.md","ref":"Web/section1.3.md","articles":[]},{"title":"vue指令和路由理解","level":"1.6.1.4","depth":3,"path":"Web/section1.4.md","ref":"Web/section1.4.md","articles":[]}]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Web/section1.md","mtime":"2022-10-26T13:05:14.033Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-11-08T02:25:52.082Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"vue指令和路由理解","level":"1.6.1.4","depth":3,"next":{"title":"生活杂记","level":"1.7","depth":1,"path":"normal/README.md","ref":"normal/README.md","articles":[{"title":"2022-11-01","level":"1.7.1","depth":2,"path":"normal/section1.md","ref":"normal/section1.md","articles":[]}]},"previous":{"title":"vue架构梳理","level":"1.6.1.3","depth":3,"path":"Web/section1.3.md","ref":"Web/section1.3.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Web/section1.4.md","mtime":"2022-11-08T02:25:46.869Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-11-08T02:25:52.082Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
