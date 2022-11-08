@@ -38,6 +38,7 @@
         * [vue快速入门](Web/section1.1.md)
         * [css入门](Web/section1.2.md)
         * [vue架构梳理](Web/section1.3.md)
+        * [vue架构梳理二](Web/section1.3.1.md)
         * [vue指令和路由理解](Web/section1.4.md)
 * [生活杂记](normal/README.md)
     * [2022-11-01](normal/section1.md)
