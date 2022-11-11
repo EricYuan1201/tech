@@ -33,6 +33,7 @@
         * [授权登录](Server/section2.1.md)
         * [项目实战配置1](Server/section2.2.md)
         * [项目实战配置2](Server/section2.3.md)
+        * [项目实战配置3](Server/section2.4.md)
 * [Web](Web/README.md)
     * [基础篇](Web/section1.md)
         * [vue快速入门](Web/section1.1.md)
