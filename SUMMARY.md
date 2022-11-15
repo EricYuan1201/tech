@@ -6,6 +6,7 @@
     * [Section1.2](Android/section1.2.md)
     * [基础知识](Android/section4.md)
         * [引用类型](Android/section4.1.md)
+        * [SurfaceView TextureView对比](Android/section4.2.md)
     * [进阶知识](Android/section5.md)
         * [ANR](Android/section5.1.md)
     * [三方框架](Android/section6.md)
