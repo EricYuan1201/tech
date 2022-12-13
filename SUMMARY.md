@@ -52,3 +52,4 @@
 * [生活杂记](normal/README.md)
     * [2022-11-01](normal/section1.md)
     * [2022-12-12](normal/section2022-12-12.md)
+    * [2022-12-13](normal/section2022-12-13.md)
