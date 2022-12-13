@@ -16,6 +16,7 @@
 * [Java](Java/README.md)
     * [线程](Java/section1.1.md)
         * [线程池](Java/线程池.md)
+        * [线程模型](Java/线程模型.md)
 * [其他](其他/README.md)
 * [Server](Server/README.md)
     * [基础篇](Server/section1.md)
